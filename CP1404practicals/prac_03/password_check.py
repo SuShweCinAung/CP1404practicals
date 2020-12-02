@@ -41,4 +41,5 @@ def is_valid_password(password):
         if count_upper >= 1 and count_lower >= 1 and count_digit >= 1 and count_special >= 1:
             valid_password = True
     return valid_password
+
 main()

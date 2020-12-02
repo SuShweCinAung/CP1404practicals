@@ -3,7 +3,6 @@ CP1404/CP5632 - Practical
 Broken program to determine score status
 """
 
-
 def main():
     score = float(input("Enter score: "))
     grade = get_grade(score)
@@ -20,4 +19,5 @@ def get_grade(score):
         else :
             grade = "Bad"
     return grade
+
 main()
