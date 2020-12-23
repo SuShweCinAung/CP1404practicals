@@ -8,13 +8,18 @@ def main():
     """Demo test code to show how to use car class."""
     my_car = Car(180)
     my_car.drive(30)
-    print("fuel =", my_car.fuel)
+    print("fuel=", my_car.fuel)
     print("odo =", my_car.odometer)
     print(my_car)
 
     print("Car {}, {}".format(my_car.fuel, my_car.odometer))
     print("Car {self.fuel}, {self.odometer}".format(self=my_car))
 
-
+    new_car = Car(100, "Limo")
+    new_car.add_fuel(20)
+    print("fuel in Limo=", new_car.fuel)
+    new_car.drive(115)
+    print("odo of Limo=", new_car.odometer)
+    print(new_car)
 
 main()
