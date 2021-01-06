@@ -11,7 +11,6 @@ from kivy.core.window import Window
 
 __author__ = 'Lindsay Ward'
 
-
 class SquareNumberApp(App):
     """ SquareNumberApp is a Kivy App for squaring a number """
     def build(self):
@@ -25,6 +24,5 @@ class SquareNumberApp(App):
         """ handle calculation (could be button press or other call), output result to label widget """
         result = value ** 2
         self.root.ids.output_label.text = str(result)
-
 
 SquareNumberApp().run()
